@@ -883,6 +883,12 @@
       height: 100%;
       @extend %imgCover;
    }
+   &__form {
+      display: none;
+      &.open {
+         display: block;
+      }
+   }
 }
 // block policy end
 
@@ -1406,13 +1412,13 @@
    }
 
    &__step-one {
-      display: none;
+      // display: none;
    }
    &__step-two {
       display: none;
    }
    &__step-three {
-      // display: none;
+      display: none;
    }
 
    &__title {

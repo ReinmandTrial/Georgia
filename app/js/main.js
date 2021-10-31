@@ -235,6 +235,9 @@ $(document).ready(function () {
    //    $(this).closest('.form-policy').find('.form-policy__step-two').show();
    // });
 
+   $('.block-policy__btn').on('click', function () {
+      $(this).closest('.block-policy').find('.block-policy__form').toggleClass('open');
+   })
 
    // действия в форме полиса конец
 
