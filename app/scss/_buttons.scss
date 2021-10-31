@@ -1,0 +1,51 @@
+.btn {
+    border-radius: 8px;
+    padding: 17px 28px;
+    box-sizing: padding-box;
+    transition: ease 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    &:hover {
+    }
+    &:focus {
+    }
+    &:active {
+    }
+    &-red {
+        background: $colorRed;
+        color: $white;
+        &:hover {
+            background: $white;
+            color: $colorRed;
+            box-shadow: 10px 5px 84px rgba(100, 100, 100, 0.25);
+        }
+    }
+    &-white {
+        background: $white;
+        color: $colorRed;
+        &:hover {
+            background: $colorRed;
+            color: $white;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .btn {
+        font-size: 16px;
+        padding: 9px 16px 10px;
+    }
+}
+input,
+textarea {
+    border: unset;
+    background: transparent;
+    &::placeholder {
+    }
+}
+button {
+    border: unset;
+    padding: unset;
+    cursor: pointer;
+    background: unset;
+}

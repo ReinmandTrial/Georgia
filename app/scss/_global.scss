@@ -1,0 +1,156 @@
+html,
+body {
+	height: 100%;
+	font-family: "Raleway";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	color: $color1;
+	overflow-x: hidden;
+}
+textarea {
+	resize: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	position: relative;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0px 25px;
+	height: 100%;
+}
+input,
+textarea {
+	appearance: none;
+	outline: none;
+}
+
+.breadcrumbs {
+}
+
+.d-flex {
+	display: flex !important;
+}
+
+//Ввод данных конец
+.burger {
+}
+
+.off {
+	display: none !important;
+}
+
+.checkbox {
+	position: relative;
+}
+.checkbox-none,
+.radio-none {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.checkbox-style {
+	display: block;
+	cursor: pointer;
+	width: 28px;
+	height: 28px;
+	background: #e9e9e9;
+	border-radius: 4px;
+	margin-right: 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.icon {
+		display: none;
+		font-size: 12px;
+		color: $white;
+	}
+}
+.checkbox-style--contour {
+	border: 2px solid $color1;
+	background: $white;
+}
+.checkbox-none:checked + .checkbox-style {
+	background: $color1;
+	.icon {
+		display: block;
+	}
+}
+
+.checkbox-style--secondary {
+	display: block;
+	cursor: pointer;
+	width: 56px;
+	height: 28px;
+	background: #e9e9e9;
+	border-radius: 18.5px;
+	// transition: ease 0.3s;
+	margin-right: 11px;
+	span {
+		position: absolute;
+		transform: translateY(-50%);
+		top: 50%;
+		left: 6px;
+		display: block;
+		width: 18px;
+		height: 17.33px;
+		background: #b7b7b7;
+		// transition: ease 0.3s;
+		border-radius: 50%;
+	}
+}
+
+.checkbox-none:checked + .checkbox-style--secondary {
+	background: $color1;
+	span {
+		background: $white;
+		transform: translateY(-50%) translateX(26px);
+	}
+}
+.radio-style {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+.radio-none:checked + .radio-style::before {
+	content: " ";
+}
+
+// якорь
+.archon {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: -10vh;
+}
+// якорь конец
+
+// скроллбар
+.simplebar-track.simplebar-vertical {
+	background: #e2e2e2;
+	border-radius: 54px;
+	width: 5px;
+}
+.simplebar-scrollbar:before {
+	position: absolute;
+	content: "";
+	background: $colorRed;
+	border-radius: 54px;
+	left: 0;
+	right: 0;
+	width: 5px;
+}
+// скроллбар конец

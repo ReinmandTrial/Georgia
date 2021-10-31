@@ -1,0 +1,1171 @@
+// MAX-WIDTH 1600PX breakpoints START
+@media (max-width: 1600px) {
+}
+// MAX-WIDTH 1600PX breakpoints END
+
+// MAX-WIDTH 1399.98PX breakpoints START
+@media (max-width: 1399.98px) {
+   .rules-entry__bg {
+      @include adaptiv("width", 870, 520, 2, 1400, 992);
+      @include adaptiv("bottom", 137, 320, 2, 1400, 992);
+   }
+}
+// MAX-WIDTH 1399.98PX breakpoints END
+
+// MAX-WIDTH 1199.98PX breakpoints START
+@media (max-width: 1199.98px) {
+   .rules-in-cities__wrapper {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   }
+   .rules-in-cities__wrapper .card-rules {
+      margin: 0 50px 30px;
+   }
+   .banner-policy__bg-left,
+   .banner-policy__bg-right {
+      display: none;
+   }
+   .info-tourist__img--out {
+      margin-top: -62px;
+   }
+   .form-policy {
+      padding-right: 30px;
+      padding-left: 30px;
+   }
+}
+// MAX-WIDTH 1199.98PX breakpoints END
+@media (max-width: 1024px) {
+   .lang {
+      margin-left: auto;
+   }
+   .burger-icon {
+      display: block;
+   }
+   .header__toggle,
+   .header__contact-us {
+      display: none;
+   }
+   .partners__item {
+      &:nth-child(even) {
+         width: 50%;
+      }
+      &:not(:last-of-type):nth-child(odd) {
+         width: 50%;
+      }
+   }
+}
+
+// MAX-WIDTH 991.98PX breakpoints START
+@media (max-width: 991.98px) {
+   .footer {
+      &__logo {
+         margin-bottom: 40px;
+      }
+      &__block-links {
+         align-items: flex-start;
+         flex-direction: column;
+         margin-bottom: unset;
+      }
+      &__link:not(:last-of-type) {
+         margin-right: unset;
+         margin-bottom: 25px;
+      }
+      &__email {
+         margin: 15px 0 40px;
+      }
+      &__payment {
+         margin-top: -38px;
+      }
+   }
+   .rules-entry {
+      &__content {
+         padding-bottom: 70px;
+      }
+      &__bg {
+         position: static;
+         max-width: 870px;
+         margin-left: auto;
+         margin-right: -25px;
+         margin-top: 30px;
+         width: 100%;
+      }
+   }
+   .rules-in-cities__wrapper .card-rules {
+      margin: 0px 19px 30px;
+   }
+   .public-rules {
+      &__content {
+         flex-direction: column;
+      }
+      &__flex-container {
+         order: 2;
+      }
+      &__text-block {
+         max-width: unset;
+         text-align: center;
+         margin-right: unset;
+         margin-bottom: 50px;
+      }
+      &__wrapper {
+         margin-right: unset;
+         justify-content: space-around;
+         max-width: 600px;
+      }
+   }
+   .info-tourist__title {
+      position: relative;
+      z-index: 10;
+   }
+   .info-tourist__img {
+      margin-left: -200px;
+      margin-top: 100px;
+   }
+   .partners {
+      &__item {
+         width: 100% !important;
+         padding-left: unset !important;
+         padding-right: 45px !important;
+         &::before {
+            display: none;
+         }
+      }
+      &__img {
+         width: 228px !important;
+      }
+      &__text {
+         max-width: unset !important;
+      }
+   }
+   .insurance-covers {
+      &__block {
+         width: calc(50% - 30px);
+         &:last-child {
+            margin-top: 30px;
+         }
+      }
+      .card-police-cover {
+         margin-bottom: unset;
+      }
+      &__term,
+      &__list {
+         display: none;
+      }
+   }
+   .info-tourist {
+      &__content {
+         flex-direction: column;
+      }
+      &__img--out {
+         width: calc(100% + 65px);
+         margin-left: -28px;
+         margin-right: -24px;
+         margin-top: 23px;
+         margin-bottom: -30px;
+         img {
+            width: 100%;
+         }
+      }
+   }
+   .popup__content {
+      margin: 30px;
+   }
+   .popup-details {
+      &__content {
+         padding: 60px 60px 60px 40px;
+      }
+      &__important {
+         margin-right: unset;
+      }
+   }
+   .card-info {
+      padding-left: unset;
+   }
+   .form-policy {
+      &__steps {
+         // display: none;
+      }
+      &__steps-pattern {
+         margin: 0 10px;
+      }
+      &__steps-text {
+         width: 158px;
+         font-size: 18px;
+      }
+      &__row {
+         flex-wrap: wrap;
+      }
+      &__tourist-wrapper .input__block {
+         width: calc(50% - 20px);
+      }
+   }
+   .input__block {
+      width: calc(50% - 32px);
+      margin-bottom: 20px;
+      .check-block {
+         width: 100%;
+      }
+   }
+   .form-policy__accept {
+      margin-left: 20px;
+      .check-block {
+         width: 100%;
+      }
+   }
+   .check-block {
+      width: calc(50% - 32px);
+   }
+}
+// MAX-WIDTH 991.98PX breakpoints END
+
+// MAX-WIDTH 767.98PX breakpoints START
+@media (max-width: 767.98px) {
+   .banner {
+      padding-bottom: 50px;
+      &__content {
+         width: unset;
+      }
+      &__bg-in {
+         position: static;
+      }
+      &__bg-out {
+         display: none;
+      }
+      &__bg-out--mobile {
+         display: flex;
+      }
+   }
+   .rules-in-cities {
+      &__wrapper {
+         flex-direction: column;
+         justify-content: flex-start;
+      }
+      &__wrapper .card-rules:nth-child(even) {
+         align-self: flex-end;
+      }
+      &__wrapper .card-rules:not(:last-child) {
+         margin-bottom: -30px;
+      }
+      &__bg {
+         display: none;
+      }
+   }
+   .rules-in-hotels {
+      &__wrapper {
+         flex-direction: column;
+         align-items: center;
+      }
+      &__wrapper .card-rules:not(:last-child) {
+         margin-right: unset;
+         margin-bottom: 40px;
+      }
+   }
+   .info-tourist {
+      &__content {
+         flex-direction: column;
+      }
+      &__img {
+         margin-top: 0px;
+         margin-right: -10px;
+         margin-bottom: -30px;
+         margin-left: -30px;
+      }
+   }
+   .questions {
+      &__content {
+         flex-direction: column-reverse;
+      }
+      &__text-block {
+         padding: 50px 0 0;
+         text-align: center;
+      }
+   }
+   .partners {
+      &__item {
+         flex-direction: column;
+         padding-top: 20px !important;
+         padding-right: 10px !important;
+         padding-left: 10px !important;
+         text-align: center;
+      }
+      &__img {
+         width: unset !important;
+         height: 120px;
+         align-items: flex-end;
+         margin-bottom: 13px;
+      }
+   }
+   .buy-a-policy {
+      &__wrapper {
+         flex-direction: column;
+         align-items: center;
+         .card-rules:not(:last-child) {
+            margin-right: unset;
+            margin-bottom: 40px;
+         }
+      }
+   }
+   .insurance-covers {
+      &__block {
+         width: calc(100% - 30px);
+         margin-bottom: 45px;
+         &:last-child {
+            margin-top: unset;
+         }
+      }
+   }
+   .card-info {
+      width: 100%;
+      &__img {
+         justify-content: center;
+      }
+   }
+   .popup-country {
+      &__name {
+         padding: 4px 12px;
+         word-wrap: break-word;
+      }
+      &__flag {
+         margin-right: 20px;
+      }
+   }
+   .form-policy {
+      padding-top: unset;
+      &__title {
+         display: block;
+      }
+      &__steps {
+         display: none;
+      }
+      &__footer {
+         flex-wrap: wrap;
+      }
+      &__status {
+         margin-bottom: 14px;
+         order: 2;
+         width: 100%;
+      }
+      &__status-item {
+         justify-content: center;
+      }
+      &__accept {
+         margin-left: unset;
+         margin-bottom: 20px;
+         order: 1;
+      }
+      &__btn-prev {
+         margin: 20px auto 30px;
+         order: 3;
+      }
+      &__btn-next {
+         margin-left: unset;
+         order: 4;
+      }
+      &__secure {
+         margin: 0 auto;
+         margin-top: 19px;
+      }
+   }
+   .tariff {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      &__item {
+         &:not(:last-child) {
+            margin-right: unset;
+            margin-bottom: 10px;
+         }
+      }
+   }
+   .input {
+      &__block {
+         width: calc(100% - 32px);
+      }
+   }
+   .check-block {
+      width: 100%;
+   }
+}
+// MAX-WIDTH 767.98PX breakpoints END
+
+// MAX-WIDTH 576.98PX breakpoints START
+@media (max-width: 575.98px) {
+   .header {
+      &__content {
+         height: 84px;
+         padding-top: 18px;
+      }
+   }
+   .logo {
+      width: 135px;
+      height: 45px;
+      transform: translateY(-27%);
+   }
+   .lang {
+      .icon-triangle-down {
+         margin-left: 10px;
+         font-size: 9px;
+      }
+      &__body {
+         min-width: 95px;
+         top: calc(100% + 8px);
+         left: -16px;
+      }
+      &__body .lang__item {
+         padding: 7px 16px;
+      }
+   }
+   .flag {
+      width: 22px;
+      height: 22px;
+   }
+   .burger .icon-close {
+      top: 33px;
+   }
+   .footer {
+      &__content {
+         padding: 40px 0 50px;
+      }
+      &__link {
+         font-size: 16px;
+         .icon-mail {
+            font-size: 24px;
+            margin-right: 11px;
+         }
+      }
+      &__socials-link {
+         &:not(:last-child) {
+            margin-right: 26px;
+         }
+         .icon {
+            font-size: 23px;
+         }
+      }
+
+      &__payment {
+         margin-top: -31px;
+      }
+      &__paymeent-item {
+         &:not(:last-child) {
+            margin-right: 10px;
+         }
+      }
+      &__bottom-line {
+         height: 54px;
+      }
+   }
+   .visa {
+      width: 30px;
+      height: 30px;
+   }
+   .mastercard {
+      width: 48px;
+      height: 30px;
+   }
+   .banner {
+      padding: 50px 0 10px;
+      &__content {
+      }
+      &__title {
+         margin-bottom: 35px;
+      }
+      &__item {
+         font-size: 16px;
+      }
+      &__item-img {
+         width: 18px;
+         height: 17px;
+         margin-right: 7px;
+      }
+      &__item--desktop {
+         display: none;
+      }
+      &__item--mobile {
+         display: flex;
+      }
+      &__bg-in {
+         display: none;
+      }
+      &__bg-in--mobile {
+         display: block;
+         margin-left: -93px;
+         margin-right: -85px;
+         margin-bottom: -10px;
+         margin-bottom: -45px;
+         margin-top: 10px;
+      }
+   }
+   .rules-entry {
+      &__content {
+         padding-top: 70px;
+         display: flex;
+         flex-direction: column;
+      }
+      &__title {
+         max-width: 240px;
+         margin: 0 auto;
+         text-align: center;
+         margin-bottom: 20px;
+      }
+      &__descr {
+         max-height: 134px;
+         overflow: hidden;
+         text-align: center;
+         max-width: unset;
+         &::before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 45px;
+            background: linear-gradient(0deg, $white 0%, rgba(255, 255, 255, 0) 100%);
+         }
+      }
+      &__btn {
+         margin: 0 auto;
+         width: max-content;
+         display: block;
+         margin-bottom: 8px;
+      }
+      &__bg {
+         display: none;
+      }
+      &__bg--mobile {
+         align-self: center;
+         display: block;
+         width: max-content;
+         margin: 0 -25px;
+         margin-left: -25px;
+      }
+   }
+   .choose-a-country {
+      &__content {
+         padding: 50px 0;
+      }
+      &__title {
+         padding: 0 25px;
+         margin-bottom: 45px;
+      }
+      &__bg {
+         display: none;
+      }
+      &__bg--mobile {
+         display: block;
+      }
+   }
+   .search {
+      &__results {
+         margin: -6px 0px;
+         margin-bottom: 19px;
+         min-height: 235px;
+      }
+      &__item {
+         margin: 6px 3.5px;
+         padding: 7px 14px;
+         box-shadow: 10px 5px 84px rgba(100, 100, 100, 0.25);
+         border-radius: 8px;
+      }
+      &__input-box {
+         .icon {
+            font-size: 16px;
+            right: 28px;
+         }
+      }
+      &__input {
+         padding: 9px 50px 9px 28px;
+      }
+   }
+   .rules-in-cities {
+      &__content {
+         padding: 70px 0;
+      }
+      &__title {
+         text-align: center;
+         padding: 0 10px;
+         margin-bottom: 40px;
+      }
+      &__wrapper .card-rules:nth-child(even) {
+         width: 97px;
+      }
+      &__wrapper .card-rules:nth-child(1) .card-rules__text {
+         max-width: 133px;
+         margin: 0 auto;
+      }
+   }
+   .card-rules {
+      width: 172px;
+      margin-left: unset !important;
+      margin-right: unset !important;
+      &__img {
+         width: 93px;
+         height: 74px;
+         margin: 0 auto;
+         margin-bottom: 15px;
+      }
+      &__pattern {
+         width: 54px;
+         height: 17px;
+         margin-bottom: 15px;
+      }
+   }
+   .banner-policy {
+      &__content {
+         padding: 50px 0;
+      }
+      &__title {
+         margin-bottom: 28px;
+      }
+      &__descr {
+         padding: 0 7px;
+         margin-bottom: 35px;
+      }
+      &__bg-top {
+         display: block;
+      }
+   }
+   .rules-in-hotels {
+      &__content {
+         padding: 70px 0;
+      }
+      &__title {
+         margin-bottom: 50px;
+      }
+      &__term {
+         display: none;
+      }
+      &__wrapper .card-rules:nth-child(1) {
+         width: 109px;
+      }
+   }
+   .public-rules {
+      &__content {
+         padding: 70px 0;
+      }
+      &__title {
+         margin-bottom: 25px;
+      }
+      &__warning {
+         margin-bottom: 10px;
+      }
+      &__text {
+         display: none;
+      }
+      &__text--mobile {
+         display: block;
+      }
+      &__wrapper .card-rules {
+         width: 131px;
+      }
+   }
+   .info-tourist {
+      &__content {
+         padding: 50px 0;
+      }
+      &__text-block {
+         text-align: center;
+      }
+      &__title {
+         margin-bottom: 25px;
+      }
+      &__descr {
+         max-width: 270px;
+         margin: 0 auto;
+         margin-bottom: 35px;
+      }
+   }
+   .block-policy {
+      padding: 70px 0;
+      &__btn-block {
+         margin: 0 20px;
+         .container {
+            padding: 0;
+         }
+      }
+      &__female {
+         width: 203px;
+         height: 325px;
+         margin-left: -82px;
+         margin-top: 7px;
+         margin-bottom: -67px;
+         margin-right: -102px;
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+         }
+      }
+      &__btn {
+         padding: 13px 32px;
+         font-size: 16px;
+         max-width: 257px;
+         .icon {
+            margin-left: 20px;
+         }
+      }
+   }
+   .questions {
+      padding: 50px 0;
+      &__bg-pattern-left,
+      &__bg-pattern-right {
+         display: block;
+      }
+      &__content {
+         border-radius: 8px;
+      }
+      &__title {
+         margin-bottom: 20px;
+      }
+      &__img {
+         margin-top: -10px;
+         margin-right: -38px;
+         margin-left: -8px;
+         margin-bottom: -14px;
+         transform: rotate(-5.43deg);
+      }
+      &__bg-left {
+         display: none;
+      }
+   }
+   .partners {
+      padding: 70px 0;
+      &__content {
+         padding: 10px 20px;
+         border-radius: 17px;
+      }
+      &__item {
+         padding-bottom: 30px;
+         padding-left: unset !important;
+         padding-right: unset !important;
+         &:nth-child(3) .partners__img img {
+            height: 49px;
+         }
+         &:nth-child(4) .partners__img img {
+            height: 54px;
+         }
+         &:nth-child(5) .partners__img img {
+            height: 62px;
+         }
+         &:nth-child(6) {
+            .partners__text {
+               max-width: 200px !important;
+               margin: 0 auto;
+            }
+            .partners__img img {
+               height: 66px;
+            }
+         }
+         &:nth-child(7) {
+            .partners__text {
+               max-width: 264px !important;
+               margin: 0 auto;
+            }
+            .partners__img img {
+               height: 55px;
+            }
+         }
+      }
+      &__img {
+         height: 70px;
+      }
+   }
+   .buy-a-policy {
+      &__content {
+         padding: 70px 0;
+      }
+      &__bg {
+         display: flex;
+         align-items: center;
+         img {
+            object-fit: cover;
+            margin: 45px 0 0 0;
+            height: 128px;
+         }
+      }
+      &__title {
+         max-width: 303px;
+         margin: 0 auto;
+         margin-bottom: 40px;
+      }
+   }
+   .insurance-covers {
+      &__content {
+         padding: 70px 0;
+      }
+      &__title {
+         margin-bottom: 45px;
+      }
+   }
+   .card-police-cover {
+      padding-bottom: 42px;
+      &__head {
+         padding: 19px 0;
+         margin-bottom: 32px;
+      }
+      &__name {
+         font-size: 20px;
+         font-weight: 900;
+         margin-bottom: 8px;
+      }
+      &__franchice {
+         font-weight: 600;
+         font-size: 18px;
+      }
+      &__container {
+         padding: 0 18px;
+         margin-bottom: 45px;
+      }
+      &__dropdown--large:not(:last-child) {
+         margin-bottom: 21px;
+      }
+      &__dropdown--large-icon {
+         width: 22px;
+         height: 22px;
+         .icon-plus {
+            font-size: 13px;
+         }
+         .icon-minus {
+            font-size: 2.76px;
+            transform: translate(4%, 22%);
+         }
+      }
+      &__dropdown--large-head {
+         font-size: 18px;
+      }
+      &__btn-buy {
+         padding: 22px 26px;
+         font-size: 18px;
+         margin: 0 33px;
+         margin-bottom: 15px;
+      }
+      &__descr {
+         margin: 0 18px;
+         font-size: 18px;
+      }
+      &__dropdown--large-body {
+         margin-top: 16px;
+      }
+      &__item {
+         font-size: 16px;
+      }
+      &__dropdown--small-head .icon-triangle-down {
+         font-size: 9px;
+         transform: translateY(7px);
+      }
+      &__dropdown--small-body {
+         margin-top: 11px;
+      }
+      &__dropdown--small-item {
+         font-size: 12px;
+         padding-left: 33px;
+         &::before {
+            top: 6px;
+            left: 23px;
+         }
+
+         &:not(:last-child) {
+            margin-bottom: 6px;
+         }
+      }
+   }
+   .popup {
+      &__bg {
+         display: none;
+      }
+      .icon-close {
+         top: 20px;
+         right: 20px;
+         font-size: 18px;
+      }
+      &__content {
+         margin: 40px 25px;
+      }
+   }
+   .popup-details {
+      &__content {
+         padding: 60px 20px 60px 17px;
+         max-height: 590px;
+      }
+      &__p {
+         &:not(:last-child) {
+            margin-bottom: 24px;
+         }
+      }
+      &__list {
+         &:not(:last-child) {
+            margin-bottom: 24px;
+         }
+      }
+      &__list-item {
+         padding-left: 24px;
+         &:not(:last-child) {
+            margin-bottom: 24px;
+         }
+         &::before {
+            top: 11px;
+            left: 11px;
+            width: 3px;
+            height: 3px;
+         }
+      }
+      &__important {
+         margin: 0px -20px -60px -17px;
+         padding: 30px 55px 30px 28px;
+      }
+   }
+   .popup-country {
+      &__content {
+         padding: 63px 20px 15px 28px;
+      }
+      &__head {
+         margin-bottom: 34px;
+      }
+      &__flag {
+         width: 69px;
+         height: 46px;
+         margin-right: 13px;
+      }
+      &__name {
+         font-size: 18px;
+      }
+      &__visa {
+         margin-bottom: 35px;
+      }
+      &__visa-img {
+         width: 50px;
+         height: 61px;
+         margin-right: 19px;
+      }
+      &__visa-text {
+         margin-top: unset;
+      }
+      &__visa-title {
+         margin-bottom: 5px;
+      }
+      &__dropdown {
+         &:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+      &__dropdown-head .icon {
+         margin-left: 80px;
+         font-size: 13px;
+      }
+      &__dropdown-body {
+         padding-top: 10px;
+         padding-right: 20px;
+      }
+      &__p:not(:last-child) {
+         margin-bottom: 4px;
+      }
+   }
+   .card-info {
+      margin-bottom: 20px;
+      &:nth-child(3) .card-info__img {
+         height: 36px;
+      }
+      &__img {
+         height: 44px;
+         width: 50px;
+         margin-right: 20px;
+         img {
+            height: 100%;
+         }
+      }
+      &__title {
+         margin-bottom: 0px;
+      }
+      &__wrapper {
+         margin-bottom: 15px;
+      }
+   }
+   .form-policy {
+      border-radius: 48px;
+      padding: 0 20px 8px;
+      &__row {
+         &:not(:last-child) {
+            margin-bottom: 25px;
+         }
+      }
+      &__toggle .check-block__text {
+         max-width: 200px;
+      }
+      &__footer {
+         padding-top: 35px;
+         margin-left: -20px;
+         margin-right: -20px;
+      }
+      &__accept {
+         padding-left: 20px;
+      }
+      &__status {
+         width: 100%;
+         border-radius: unset;
+         padding: 11px;
+      }
+      &__status-item {
+         font-size: 16px;
+         font-weight: 600;
+      }
+      &__btn-next {
+         width: 100%;
+         border-radius: unset;
+         padding: 17px;
+         line-height: 20px;
+         font-size: 16px;
+         box-shadow: unset;
+      }
+      &__bg {
+         display: none;
+      }
+      &__secure {
+         width: 86px;
+         height: 29px;
+      }
+
+      &__tourist-wrapper .input__block {
+         width: calc(100% - 20px);
+      }
+      &__close {
+         font-size: 14px;
+         top: 23px;
+         right: 20px;
+      }
+      &__customer {
+         margin-bottom: 25px;
+      }
+      &__customer-descr {
+         font-size: 14px;
+      }
+      &__wrapper {
+         margin-bottom: 50px;
+      }
+      &__tourist {
+         padding: 20px;
+         margin-left: -20px;
+         margin-right: -20px;
+         &:not(:last-child) {
+            margin-bottom: 13px;
+         }
+      }
+      &__tourist:nth-child(even) {
+         background: linear-gradient(90deg, #ffffff 0%, #f3f3f3 52.6%, #ffffff 100%);
+      }
+      &__subtitle {
+         text-align: left;
+      }
+      &__participants {
+         margin-bottom: 30px;
+      }
+      &__btn-add-tourist {
+         width: 100%;
+         min-width: unset;
+      }
+      &__step-two {
+         .form-policy__btn-next {
+            width: 50%;
+         }
+      }
+      &__btn-prev {
+         width: 50%;
+         background: $white;
+         box-shadow: 10px 5px 84px rgba(100, 100, 100, 0.25);
+         font-size: 16px;
+         line-height: 20px;
+         height: 54px;
+         margin: unset;
+      }
+   }
+   .tariff__item {
+      padding: 5px 10px 4px;
+      min-width: 130px;
+      font-size: 16px;
+   }
+   .input {
+      padding: 11px 40px 10px 20px;
+      &__title {
+         font-size: 16px;
+         margin-bottom: 8px;
+         padding-left: unset;
+      }
+      &__box {
+         height: unset;
+         border-radius: 5px;
+         .icon-calendar {
+            font-size: 18px;
+         }
+         .icon-triangle-down {
+            font-size: 10px;
+         }
+      }
+      &__check-block {
+         margin-top: 12px;
+         padding-left: 20px;
+      }
+      &__check-block-text {
+         font-size: 13px;
+      }
+      &__more-details {
+         font-size: 13px;
+         margin-top: 12px;
+         padding-left: 20px;
+      }
+      &__select-body {
+         padding: 16px 0;
+      }
+      &__block--promocode .input__box .icon-check {
+         font-size: 13px;
+      }
+      &__block--promocode .input__box .icon-close {
+         font-size: 14px;
+      }
+      &__error {
+         margin-top: 6px;
+         padding-left: 20px;
+      }
+   }
+   .checkbox-style {
+      width: 22px;
+      height: 22px;
+      margin-right: 9px;
+   }
+   .checkbox-style--secondary {
+      width: 46px;
+      height: 23px;
+      span {
+         width: 14.79px;
+         height: 14.24px;
+         left: 5px;
+      }
+   }
+   .checkbox-none:checked + .checkbox-style--secondary span {
+      transform: translateY(-50%) translateX(22px);
+   }
+
+   .check-block {
+      &__text {
+         font-size: 16px;
+      }
+   }
+}
+// MAX-WIDTH 576.98PX breakpoints END
+
+// fonts
+@media (max-width: 575.98px) {
+   .h1 {
+      font-size: 25px;
+      line-height: 136%;
+   }
+   .h2 {
+      font-size: 16px;
+   }
+   .h3 {
+      font-size: 16px;
+      line-height: 150%;
+   }
+   html,
+   body {
+      font-size: 14px;
+      line-height: 150%;
+   }
+}
