@@ -115,8 +115,83 @@
       margin-right: -90px;
       background: #fff5f6;
    }
+   &__container {
+      display: flex;
+      width: 100%;
+   }
+   &__leftside {
+      flex: 0 1 50%;
+      width: 50%;
+      padding-right: 62px;
+      // max-width: 454px;
+   }
+   &__rightside {
+      flex: 0 1 50%;
+      width: 50%;
+      padding-left: 64px;
+      // max-width: 457px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         height: 100%;
+         background: linear-gradient(180deg, #ff4b55 57.29%, rgba(255, 71, 81, 0.2) 100%);
+         border-radius: 2.5px;
+         width: 1px;
+      }
+   }
 }
-
+.popup-read-more {
+   // display: block;
+   .popup-details__red {
+      min-height: 140px;
+   }
+   .popup-details__content {
+      padding-right: 60px;
+      max-height: 772px;
+   }
+   .popup__content {
+      max-width: 1161px;
+   }
+   .popup-details__list-item {
+      font-weight: 500;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      &:not(:last-child) {
+         margin-bottom: unset;
+         border-bottom: 1px solid #d7d7d7;
+      }
+      &::before {
+         top: 20px;
+      }
+   }
+   .popup-details__leftside .popup-details__list-item:nth-child(even) {
+      background: linear-gradient(
+         269.92deg,
+         rgba(249, 249, 249, 0) 0.73%,
+         rgba(249, 249, 249, 0.5) 14.96%,
+         rgba(249, 249, 249, 0.5) 44.37%,
+         rgba(249, 249, 249, 0.5) 87.13%,
+         rgba(249, 249, 249, 0) 98.31%
+      );
+   }
+   .popup-details__rightside .popup-details__list-item:nth-child(odd) {
+      background: linear-gradient(
+         269.92deg,
+         rgba(249, 249, 249, 0) 0.73%,
+         rgba(249, 249, 249, 0.5) 14.96%,
+         rgba(249, 249, 249, 0.5) 44.37%,
+         rgba(249, 249, 249, 0.5) 87.13%,
+         rgba(249, 249, 249, 0) 98.31%
+      );
+   }
+}
 .popup-country {
    // display: block;
    &__content {

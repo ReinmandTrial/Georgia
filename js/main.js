@@ -47,9 +47,9 @@ $(document).ready(function () {
       block.toggleClass('open');
    });
 
-   $('input[name="daterange"]').focusin(function () {
-      $(this).closest('.js-calendar').addClass('open');
-   });
+   // $('input[name="daterange"]').focusin(function () {
+   //    $(this).closest('.js-calendar').addClass('open');
+   // });
 
    $('.js-select--swich .js-select-body .js-select-item').on('click', function () {
       btn = $(this);
@@ -170,6 +170,9 @@ $(document).ready(function () {
    $('.btn-popup-questions').on('click', function () {
       $('.popup-questions').fadeIn();
    });
+   $('.btn-popup-read-more').on('click', function () {
+      $('.popup-read-more').fadeIn();
+   });
 
 
    // страны
@@ -213,6 +216,7 @@ $(document).ready(function () {
    new SimpleBar(document.getElementById('scroll-popup-rules-entry'));
    new SimpleBar(document.getElementById('scroll-popup-info-tourist'));
    new SimpleBar(document.getElementById('scroll-popup-questions'));
+   new SimpleBar(document.getElementById('scroll-popup-read-more'));
    if (!$('.wrapper').hasClass('index-leave-georgia')) {
       new SimpleBar(document.getElementById('scroll-popup-rules-in-hotels'));
       new SimpleBar(document.getElementById('scroll-popup-public-rules'));

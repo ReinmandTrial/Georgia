@@ -32,6 +32,14 @@
       padding-right: 30px;
       padding-left: 30px;
    }
+   .popup-details {
+      &__leftside {
+         padding-right: 30px;
+      }
+      &__rightside {
+         padding-left: 31px;
+      }
+   }
 }
 // MAX-WIDTH 1199.98PX breakpoints END
 @media (max-width: 1024px) {
@@ -224,6 +232,26 @@
    }
    .form-policy__include-item {
       width: calc(50% - 25px);
+   }
+   .popup-details {
+      &__container {
+         flex-direction: column;
+      }
+      &__leftside {
+         padding-right: unset;
+         width: unset;
+         margin-bottom: 30px;
+      }
+      &__rightside {
+         padding-left: unset;
+         width: unset;
+         &::before {
+            display: none;
+         }
+      }
+   }
+   .popup-read-more .popup-details__red {
+      min-height: unset;
    }
 }
 // MAX-WIDTH 991.98PX breakpoints END
@@ -1040,6 +1068,7 @@
    .form-policy {
       border-radius: 48px;
       padding: 0 20px 8px;
+      margin-top: 50px;
       &__row {
          &:not(:last-child) {
             margin-bottom: 25px;

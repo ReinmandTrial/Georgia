@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -100,11 +100,7 @@
 
 			<!-- CONTENT start  -->
 
-			<!-- <div class="vvv" style="background: #f3f3f3;padding-top: 100px;">
-				<div class="container">
 
-				</div>
-			</div> -->
 			<!-- banner start -->
 			<div class="banner">
 				<div class="container">
@@ -636,14 +632,14 @@
 										<div class="input__block">
 											<!-- ошибка верификации происходит при добавлении класса "error" к блоку выше -->
 											<p class="input__title">Дата путешествия</p>
-											<label class="input__select js-calendar js-select">
-												<div class="input__box js-select-head form-policy__select-head-calendar">
+											<div class="input__select js-calendar js-select">
+												<label class="input__box js-select-head form-policy__select-head-calendar">
 													<input type="text" name="daterange" class="input daterange-input"
 														placeholder="Выберите даты">
 													<span class="icon icon-calendar"></span>
-												</div>
+												</label>
 
-											</label>
+											</div>
 											<label class="input__check-block">
 												<span class="checkbox">
 													<input type="checkbox" class="checkbox-none js-check-calendar">
@@ -692,7 +688,7 @@
 												</div>
 											</div>
 											<button type="button"
-												class="input__more-details btn-popup btn-popup-more-details">Подробнее</button>
+												class="input__more-details btn-popup btn-popup-read-more">Подробнее</button>
 											<p class="input__error">Выберите тип отдыха</p>
 										</div>
 									</div>
@@ -1251,8 +1247,8 @@
 											<p class="form-policy__steps-text h3">Личная информация</p>
 										</div>
 										<div class="form-policy__steps-pattern">
-											<img src="images/step-pattern-gray.png" alt=""
-												class="form-policy__steps-pattern--gray">
+											<img src="images/step-pattern-black.png" alt=""
+												class="form-policy__steps-pattern--black">
 										</div>
 										<div class="form-policy__steps-item active">
 											<div class="form-policy__steps-circle">
@@ -1771,6 +1767,58 @@
 				</div>
 			</div>
 			<!-- POPUP public-rules END  -->
+
+			<!-- POPUP read-more  -->
+			<div class="popup popup-details popup-read-more">
+				<div class="popup__body">
+					<div class="popup__content">
+						<span class="icon icon-close popup-close"></span>
+						<div id="scroll-popup-read-more" class="popup-details__content">
+							<div class="popup-details__wrapper">
+								<div class="popup-details__container">
+									<div class="popup-details__leftside">
+										<p class="popup-details__p popup-details__p-semibold popup-details__red">Активный отдых
+											(Active leisure) – нерегулярные занятия любым видом спорта и физическими упражнениями,
+											в том числе:
+										</p>
+										<ul class="popup-details__list">
+											<li class="popup-details__list-item">Катание на велосипеде, квадроцикле, багги,
+												электросамокатах, гироскутерах и т.д., со скоростью не более 15 км/час</li>
+											<li class="popup-details__list-item">Катание на коне, верблюде, слоне</li>
+											<li class="popup-details__list-item">Банджи, роуп-джампинг</li>
+											<li class="popup-details__list-item">Туристические походы</li>
+											<li class="popup-details__list-item">Аквапарк, сафари</li>
+											<li class="popup-details__list-item">Пляжный футбол, волейбол</li>
+											<li class="popup-details__list-item">Плавание в бассейне и открытых водоемах</li>
+											<li class="popup-details__list-item">Рыбалка, охота</li>
+										</ul>
+									</div>
+									<div class="popup-details__rightside">
+										<p class="popup-details__p popup-details__p-semibold popup-details__red">Занятия спортом
+											на профессиональном уровне (Sport/Extreme rest) – регулярные занятия страхователем
+											(застрахованным лицом) любым видом спорта и нерегулярными физическими упражнениями с
+											екстремальными нагрузками, в том числе:
+										</p>
+										<ul class="popup-details__list">
+											<li class="popup-details__list-item">Катание на велосипеде, квадроцикле, багги,
+												электросамокатах, гироскутерах и т.д., со скоростью более 15 км в час</li>
+											<li class="popup-details__list-item">Рафтинг</li>
+											<li class="popup-details__list-item">Серфинг</li>
+											<li class="popup-details__list-item">Прыжки с высоты</li>
+											<li class="popup-details__list-item">Альпинизм и скалолазание</li>
+											<li class="popup-details__list-item">Акробатика</li>
+											<li class="popup-details__list-item">Прыжки в воду</li>
+											<li class="popup-details__list-item">Дайвинг</li>
+											<li class="popup-details__list-item">Катание на сноуборде и лыжах</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- POPUP read-more END  -->
 
 			<!-- POPUP info-tourist  -->
 			<div class="popup popup-details popup-info-tourist">
