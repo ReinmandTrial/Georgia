@@ -46,9 +46,11 @@ $(document).ready(function () {
       }
       block.toggleClass('open');
    });
-   // $('input[name="daterange"]').focusin(function () {
-   //    $(this).closest('.js-calendar').addClass('open');
-   // });
+
+   $('input[name="daterange"]').focusin(function () {
+      $(this).closest('.js-calendar').addClass('open');
+   });
+
    $('.js-select--swich .js-select-body .js-select-item').on('click', function () {
       btn = $(this);
       block = btn.closest('.js-select');
@@ -230,14 +232,46 @@ $(document).ready(function () {
       $(this).closest('.form-policy').find('.form-policy__step-two').hide();
       $(this).closest('.form-policy').find('.form-policy__step-three').show();
    });
-   // $('.form-policy__btn-to-step-two').on('click', function () {
-   //    $(this).closest('.form-policy').find('.form-policy__step-one').hide();
-   //    $(this).closest('.form-policy').find('.form-policy__step-two').show();
-   // });
+   $('.form-policy__btn-prev-to-step-two').on('click', function () {
+      $(this).closest('.form-policy').find('.form-policy__step-three').hide();
+      $(this).closest('.form-policy').find('.form-policy__step-two').show();
+   });
+   $('.form-policy__btn-to-step-four').on('click', function () {
+      $(this).closest('.form-policy').find('.form-policy__step-three').hide();
+      $(this).closest('.form-policy').find('.form-policy__step-four').show();
+   });
+   $('.form-policy__btn-prev-to-step-three').on('click', function () {
+      $(this).closest('.form-policy').find('.form-policy__step-four').hide();
+      $(this).closest('.form-policy').find('.form-policy__step-three').show();
+   });
 
    $('.block-policy__btn').on('click', function () {
       $(this).closest('.block-policy').find('.block-policy__form').toggleClass('open');
    })
+
+   $('.form-policy__include-item').on('click', function () {
+      if ($(this).find('.checkbox-none').is(':checked')) {
+         $(this).addClass('active');
+      } else {
+         $(this).removeClass('active');
+      }
+   })
+   $('.tariff__item--start').on('click', function () {
+      $('.tariff__item--standart').removeClass('active');
+      $('.tariff__item--max').removeClass('active');
+      $('.tariff__item--start').addClass('active');
+   });
+   $('.tariff__item--standart').on('click', function () {
+      $('.tariff__item--start').removeClass('active');
+      $('.tariff__item--max').removeClass('active');
+      $('.tariff__item--standart').addClass('active');
+   });
+   $('.tariff__item--max').on('click', function () {
+      $('.tariff__item--standart').removeClass('active');
+      $('.tariff__item--start').removeClass('active');
+      $('.tariff__item--max').addClass('active');
+   });
+
 
    // действия в форме полиса конец
 
@@ -288,4 +322,59 @@ $(document).ready(function () {
 
    // Туристы конец
 
+   // Календарь
+
+   $('input[name="daterange"], .daterangepicker').on('focus', function () {
+
+      $(this).daterangepicker({
+         opens: 'right',
+         "linkedCalendars": false,
+         "autoApply": true,
+         "parentEl": ".js-calendar",
+         "showCustomRangeLabel": false,
+         "locale": {
+            "format": "DD.MM.YYYY",
+            "separator": " - ",
+            "applyLabel": "Apply",
+            "cancelLabel": "Cancel",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "customRangeLabel": "Custom",
+            "weekLabel": "W",
+            "daysOfWeek": [
+               "Пн",
+               "Вт",
+               "Ср",
+               "Чт",
+               "Пт",
+               "Сб",
+               "Вс"
+            ],
+            "monthNames": [
+               "Январь",
+               "Февраль",
+               "Март",
+               "Апрель",
+               "Май",
+               "Июнь",
+               "Июль",
+               "Август",
+               "Сентябрь",
+               "Октябрь",
+               "Ноябрь",
+               "Декабрь"
+            ],
+            "firstDay": 1
+         },
+      }, function (start, end, label) {
+         console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+      // return;
+   });
+   // $.fn.lastWord = function () {
+   //    var text = this.text().trim().split(" ");
+   //    var last = text.pop();
+   //    this.html(text.join(" ") + (text.length > 0 ? " <span class='lastWord'>" + last + "</span>" : last));
+   // };
+   // Календарь конец
 });

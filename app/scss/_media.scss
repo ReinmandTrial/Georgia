@@ -181,9 +181,6 @@
       padding-left: unset;
    }
    .form-policy {
-      &__steps {
-         // display: none;
-      }
       &__steps-pattern {
          margin: 0 10px;
       }
@@ -196,6 +193,17 @@
       }
       &__tourist-wrapper .input__block {
          width: calc(50% - 20px);
+      }
+      &__info-block {
+         flex-wrap: wrap;
+      }
+      &__info-general {
+         width: 60%;
+         margin: 0 auto;
+         margin-bottom: 23px;
+      }
+      &__info-customer {
+         width: 100%;
       }
    }
    .input__block {
@@ -213,6 +221,9 @@
    }
    .check-block {
       width: calc(50% - 32px);
+   }
+   .form-policy__include-item {
+      width: calc(50% - 25px);
    }
 }
 // MAX-WIDTH 991.98PX breakpoints END
@@ -363,6 +374,53 @@
       &__secure {
          margin: 0 auto;
          margin-top: 19px;
+      }
+      &__include-item {
+         width: calc(100% - 25px);
+      }
+      &__final-info-item-passport {
+         padding-left: 20px;
+      }
+      &__final-info-head .form-policy__final-info-item-passport {
+         padding-left: 25px;
+      }
+      &__info-general {
+         max-width: 600px;
+         width: 100%;
+      }
+      &__info-customer {
+         max-width: 600px;
+         margin: 0 auto;
+      }
+      &__info-wrap {
+         flex-direction: column;
+      }
+      &__info-col {
+         margin-right: unset !important;
+         &:not(:last-child) {
+            border-bottom: 1px solid #cacaca;
+         }
+      }
+      &__info-term {
+         width: 56%;
+         margin-right: unset;
+         padding-right: 15px;
+      }
+      &__info-descr {
+         width: 44%;
+         text-align: left;
+      }
+      &__info-general {
+         margin-bottom: 15px;
+      }
+      &__final-info-title {
+         margin-bottom: 25px;
+      }
+      &__final-info-table {
+         display: none;
+      }
+      &__final-info-table--mobile {
+         display: block;
       }
    }
    .tariff {
@@ -1061,7 +1119,10 @@
          width: 100%;
          min-width: unset;
       }
-      &__step-two {
+      &__step-two,
+      &__step-three,
+      &__step-four,
+      &__step-five {
          .form-policy__btn-next {
             width: 50%;
          }
@@ -1074,6 +1135,102 @@
          line-height: 20px;
          height: 54px;
          margin: unset;
+      }
+      &__include-item {
+         padding: 25px 20px;
+         border-radius: 15px;
+         border: 2px solid $color1;
+         &:nth-child(1) {
+            .form-policy__include-bg {
+               width: 120px;
+               height: 175px;
+               right: 30px;
+               bottom: 2px;
+            }
+         }
+         &:nth-child(2) {
+            .form-policy__include-bg {
+               width: 166px;
+               height: 166px;
+               right: 14px;
+               bottom: 3px;
+            }
+            .form-policy__include-descr {
+               max-width: 155px;
+            }
+         }
+         &:nth-child(3) {
+            .form-policy__include-bg {
+               width: 130px;
+               height: 171px;
+               right: 14px;
+               bottom: 7px;
+            }
+            .form-policy__include-descr {
+               max-width: 216px;
+            }
+         }
+         &:nth-child(4) {
+            .form-policy__include-bg {
+               width: 122px;
+               height: 151px;
+               right: 14px;
+               bottom: 15px;
+            }
+            .form-policy__include-descr {
+               max-width: 187px;
+            }
+         }
+         &:nth-child(5) {
+            .form-policy__include-bg {
+               width: 154px;
+               height: 154px;
+               right: 17px;
+               bottom: 4px;
+            }
+            .form-policy__include-descr {
+               max-width: 205px;
+            }
+         }
+         &:nth-child(6) {
+            .form-policy__include-bg {
+               width: 146px;
+               height: 146px;
+               right: 16px;
+               bottom: 4px;
+            }
+            .form-policy__include-descr {
+               max-width: 208px;
+            }
+         }
+      }
+      &__include-title {
+         margin-bottom: 20px;
+      }
+      &__include-item-title {
+         font-size: 16px;
+         margin-bottom: 7px;
+      }
+      &__include-row {
+         padding-left: 10px;
+      }
+      &__include-descr {
+         margin-bottom: 15px;
+      }
+      &__info {
+         padding: 30px 30px 20px;
+      }
+      &__info-row {
+         padding: 6px 0;
+      }
+      &__info-row-email {
+         display: none;
+      }
+      &__info-title {
+         margin-bottom: 15px;
+      }
+      &__info-term {
+         font-size: 16px;
       }
    }
    .tariff__item {

@@ -1420,6 +1420,9 @@
    &__step-three {
       display: none;
    }
+   &__step-four {
+      display: none;
+   }
 
    &__title {
       background: $color1;
@@ -1689,7 +1692,7 @@
    }
 
    &__include-item {
-      margin: 7.5px 2.5px;
+      margin: 7.5px 12.5px;
       width: calc(33.333% - 25px);
       position: relative;
       background: #e9e9e9;
@@ -1698,9 +1701,61 @@
       flex-direction: column;
       padding: 35px 20px;
       border-radius: 8px;
+      overflow: hidden;
       &.active {
          background: $white;
-         border: 2px solid #242424;
+         border: 2px solid $color1;
+      }
+      &:nth-child(1) {
+         .form-policy__include-bg {
+            right: 36px;
+            bottom: -2px;
+         }
+      }
+      &:nth-child(2) {
+         .form-policy__include-bg {
+            right: 27px;
+            bottom: 0px;
+         }
+         .form-policy__include-descr {
+            max-width: 199px;
+         }
+      }
+      &:nth-child(3) {
+         .form-policy__include-bg {
+            right: 30px;
+            bottom: 0px;
+         }
+      }
+      &:nth-child(4) {
+         .form-policy__include-bg {
+            right: 27px;
+            bottom: 4px;
+         }
+         .form-policy__include-descr {
+            max-width: 199px;
+         }
+      }
+      &:nth-child(5) {
+         .form-policy__include-bg {
+            right: 12px;
+            bottom: 2px;
+         }
+         .form-policy__include-descr {
+            max-width: 216px;
+         }
+      }
+      &:nth-child(6) {
+         .form-policy__include-bg {
+            right: 16px;
+            bottom: 4px;
+         }
+         .form-policy__include-descr {
+            max-width: 208px;
+         }
+      }
+      .checkbox-style--contour {
+         margin-right: unset;
       }
    }
 
@@ -1719,15 +1774,164 @@
 
    &__include-row {
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       z-index: 10;
       margin-top: auto;
    }
 
    &__include-price {
+      font-weight: bold;
    }
 
    &__include-bg {
       position: absolute;
+   }
+   &__info-block {
+      display: flex;
+      margin-bottom: 55px;
+   }
+
+   &__info {
+      padding: 35px 20px 25px;
+      background: #fafafa;
+      border: 2px solid #000000;
+      border-radius: 8px;
+   }
+
+   &__info-general {
+      width: calc(44% - 23px);
+      margin-right: 23px;
+   }
+
+   &__info-title {
+      font-weight: bold;
+      margin-bottom: 21px;
+   }
+
+   &__info-wrap {
+   }
+
+   &__info-col {
+      flex: 1 1 auto;
+   }
+
+   &__info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px 0;
+      &:not(:last-child) {
+         border-bottom: 1px solid #cacaca;
+      }
+   }
+
+   &__info-term {
+      margin-right: 10px;
+      font-weight: 600;
+      &.not-flex {
+         flex: none;
+      }
+   }
+
+   &__info-descr {
+      text-align: right;
+   }
+
+   &__info-customer {
+      width: 56%;
+      .form-policy__info-wrap {
+         display: flex;
+      }
+      .form-policy__info-col:not(:last-child) {
+         margin-right: 26px;
+      }
+   }
+   &__final-info-title {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+
+   &__final-info-table {
+      width: 100%;
+   }
+   &__final-info-row {
+      display: flex;
+      align-items: center;
+      padding: 9px 0;
+      &:not(:last-child) {
+         border-bottom: 1px solid #cacaca;
+      }
+      &:not(:first-child):nth-child(odd) {
+         background: linear-gradient(
+            270deg,
+            rgba(125, 125, 125, 0) 0%,
+            rgba(232, 232, 232, 0.25) 47.4%,
+            rgba(125, 125, 125, 0) 100%
+         );
+      }
+   }
+   &__final-info-head {
+      padding: 0;
+      margin-bottom: 20px;
+      border-bottom: unset !important;
+      font-weight: 600;
+      .form-policy__final-info-item-passport {
+         padding-left: 50px;
+      }
+      .form-policy__final-info-item-num {
+         padding-left: 0px;
+      }
+   }
+   &__final-info-item {
+   }
+   &__final-info-item-num {
+      padding-left: 5px;
+      width: 6%;
+   }
+   &__final-info-item-name {
+      padding: 0 10px;
+      text-align: center;
+      width: 44%;
+   }
+   &__final-info-item-passport {
+      padding-left: 43px;
+      width: 28%;
+   }
+   &__final-info-item-date {
+      text-align: center;
+      width: 22%;
+   }
+   &__final-info-table--mobile {
+      display: none;
+   }
+   &__final-info-block {
+      padding: 15px 28px;
+      &:nth-child(even) {
+         background: linear-gradient(90deg, #ffffff 0%, #f3f3f3 52.6%, #ffffff 100%);
+      }
+   }
+
+   &__final-info-col-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+   }
+
+   &__final-info-term {
+      width: 56%;
+      padding-right: 30px;
+      font-size: 16px;
+      font-weight: 600;
+   }
+
+   &__final-info-descr {
+      width: 44%;
    }
 }
 
@@ -1913,3 +2117,143 @@
       }
    }
 }
+.daterangepicker.show-calendar .drp-calendar.right {
+   display: none;
+}
+.daterangepicker.openscenter:after {
+   display: none;
+}
+.daterangepicker.openscenter:before {
+   display: none;
+}
+.available.off {
+   display: table-cell !important;
+}
+.daterangepicker .drp-calendar {
+   width: 290px;
+   max-width: 290px;
+}
+.daterangepicker .drp-calendar.left th.month {
+   font-size: 16px;
+   font-family: "Raleway";
+   font-weight: 400;
+   color: #000;
+}
+.daterangepicker .calendar-table td {
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 400;
+   letter-spacing: 0.04em;
+   font-family: "Raleway";
+   color: #5a5a5a;
+   width: unset;
+   height: unset;
+}
+.daterangepicker .drp-calendar.left {
+   padding: 20px 82px;
+   padding: 0;
+}
+@media (min-width: 564px) {
+   .daterangepicker .drp-calendar.left .calendar-table {
+      padding-right: unset;
+   }
+   .daterangepicker {
+      width: 100%;
+   }
+}
+.daterangepicker {
+   width: 100%;
+   position: absolute;
+   color: inherit;
+   background-color: #fff;
+   // margin-top: 11px;
+   margin-left: -2px;
+   border-radius: 0;
+}
+.daterangepicker .drp-calendar.left .calendar-table {
+   font-family: "Open Sans";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding-top: 25px;
+   padding-bottom: 10px;
+}
+.daterangepicker td.start-date.end-date {
+   background: $color1;
+   border-radius: 3px;
+   border: none;
+}
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+   color: $white;
+   background: $color1;
+}
+.daterangepicker td.weekend.available {
+   color: #ff6700;
+}
+.daterangepicker td.in-range {
+   background: #f1f1f1;
+}
+.daterangepicker td.in-range.active {
+   background: $color1;
+   color: $white;
+}
+.daterangepicker td.ends {
+   color: #e2e2e2;
+}
+.daterangepicker td.ends.weekend {
+   color: #ffc39a;
+}
+.table-condensed thead tr:first-child {
+   position: relative;
+}
+.daterangepicker .calendar-table .next,
+.daterangepicker .calendar-table .prev {
+   position: absolute;
+   z-index: 30004;
+   transform: translateY(-50%);
+   top: 50%;
+}
+.daterangepicker .calendar-table .next {
+   right: 35px;
+}
+.daterangepicker .calendar-table .prev {
+   left: 35px;
+}
+.daterangepicker .calendar-table .next span,
+.daterangepicker .calendar-table .prev span {
+   border-color: #ff4b55;
+}
+.daterangepicker .calendar-table table {
+   width: 250px;
+   border-collapse: separate;
+   border-spacing: 0 3px;
+   height: 150px;
+}
+.off {
+   display: table-cell !important;
+}
+input {
+   box-sizing: border-box;
+}
+
+// .daterangepicker.show-calendar .drp-calendar {
+//    display: flex;
+//    justify-content: center;
+//    width: 100%;
+//    max-width: unset;
+// }
+.daterangepicker .calendar-table th {
+   color: #000;
+}
+// .daterange-input {
+// color: #fff;
+//    width: 100%;
+// }
+// .daterange-input::placeholder {
+//    color: #fff;
+// }
+// .daterange-input:focus .icon-triangle-right {
+//    transform: rotate(270deg);
+// }

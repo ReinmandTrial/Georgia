@@ -102,7 +102,7 @@
 
 			<!-- <div class="vvv" style="background: #f3f3f3;padding-top: 100px;">
 				<div class="container">
-					
+
 				</div>
 			</div> -->
 			<!-- banner start -->
@@ -636,13 +636,14 @@
 										<div class="input__block">
 											<!-- ошибка верификации происходит при добавлении класса "error" к блоку выше -->
 											<p class="input__title">Дата путешествия</p>
-											<div class="input__select js-select">
-												<div class="input__box js-select-head">
-													<input type="text" class="input" placeholder="Выберите даты">
+											<label class="input__select js-calendar js-select">
+												<div class="input__box js-select-head form-policy__select-head-calendar">
+													<input type="text" name="daterange" class="input daterange-input"
+														placeholder="Выберите даты">
 													<span class="icon icon-calendar"></span>
 												</div>
 
-											</div>
+											</label>
 											<label class="input__check-block">
 												<span class="checkbox">
 													<input type="checkbox" class="checkbox-none js-check-calendar">
@@ -1088,11 +1089,6 @@
 												class="form-policy__steps-pattern--gray">
 										</div>
 									</div>
-									<div class="tariff">
-										<button type="button" class="tariff__item tariff__item--start active">START</button>
-										<button type="button" class="tariff__item tariff__item--standart">STANDART</button>
-										<button type="button" class="tariff__item tariff__item--max">MAX</button>
-									</div>
 
 									<div class="form-policy__include">
 										<p class="form-policy__include-title h2">Рекомендуем включить в заявку</p>
@@ -1227,6 +1223,244 @@
 										class="form-policy__btn-prev form-policy__btn-prev-to-step-two">Назад</button>
 									<button type="button"
 										class="form-policy__btn-next form-policy__btn-to-step-four">Далее</button>
+								</div>
+							</div>
+							<div class="form-policy__step-four">
+								<div class="form-policy__content">
+									<p class="form-policy__title h3">1. Страна и даты поездки</p>
+									<div class="form-policy__steps">
+										<div class="form-policy__steps-pattern">
+											<img src="images/step-pattern-black.png" alt=""
+												class="form-policy__steps-pattern--black">
+										</div>
+										<div class="form-policy__steps-item active">
+											<div class="form-policy__steps-circle">
+												<span class="icon icon-check"></span>
+											</div>
+											<p class="form-policy__steps-text h3">Страна и даты поездки</p>
+										</div>
+										<div class="form-policy__steps-pattern">
+											<img src="images/step-pattern-black.png" alt=""
+												class="form-policy__steps-pattern--black">
+										</div>
+										<div class="form-policy__steps-item active">
+											<div class="form-policy__steps-circle">
+												<span class="icon icon-check"></span>
+
+											</div>
+											<p class="form-policy__steps-text h3">Личная информация</p>
+										</div>
+										<div class="form-policy__steps-pattern">
+											<img src="images/step-pattern-gray.png" alt=""
+												class="form-policy__steps-pattern--gray">
+										</div>
+										<div class="form-policy__steps-item active">
+											<div class="form-policy__steps-circle">
+												<span class="form-policy__steps-num">3</span>
+											</div>
+											<p class="form-policy__steps-text h3">Проверка информации</p>
+										</div>
+										<div class="form-policy__steps-pattern">
+											<img src="images/step-pattern-gray.png" alt=""
+												class="form-policy__steps-pattern--gray">
+										</div>
+									</div>
+
+									<div class="form-policy__info-block">
+										<div class="form-policy__info form-policy__info-general">
+											<p class="form-policy__info-title h2">Общая информация:</p>
+											<div class="form-policy__info-wrap">
+												<div class="form-policy__info-col">
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Даты поездки</p>
+														<p class="form-policy__info-descr">с 14.09.2021 по 29.09.2021</p>
+													</div>
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Тариф</p>
+														<p class="form-policy__info-descr">START</p>
+													</div>
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Страна путешествия</p>
+														<p class="form-policy__info-descr">Грузия</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-policy__info form-policy__info-customer">
+											<p class="form-policy__info-title h2">Покупатель:</p>
+											<div class="form-policy__info-wrap">
+												<div class="form-policy__info-col">
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Имя</p>
+														<p class="form-policy__info-descr">Иван</p>
+													</div>
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Фамилия</p>
+														<p class="form-policy__info-descr">Келембет</p>
+													</div>
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Дата рождения</p>
+														<p class="form-policy__info-descr">06.10.1995</p>
+													</div>
+												</div>
+												<div class="form-policy__info-col">
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Паспорт</p>
+														<p class="form-policy__info-descr">FA 785426</p>
+													</div>
+													<div class="form-policy__info-row form-policy__info-row-email">
+														<p class="form-policy__info-term not-flex">E-mail</p>
+														<p class="form-policy__info-descr">name@gmail.com</p>
+													</div>
+													<div class="form-policy__info-row">
+														<p class="form-policy__info-term">Телефон</p>
+														<p class="form-policy__info-descr">+380935841231</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<p class="form-policy__final-info-title h2">Участники поездки</p>
+									<div class="form-policy__final-info-table">
+										<div class="form-policy__final-info-row form-policy__final-info-head">
+											<p class="form-policy__final-info-item form-policy__final-info-item-num">№</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-name">Имя/Фамилия
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-passport">Паспорт
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-date">Дата рождения
+											</p>
+										</div>
+										<div class="form-policy__final-info-row">
+											<p class="form-policy__final-info-item form-policy__final-info-item-num">1</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-name">Иван Келембет
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-passport">FA 785426
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-date">06.10.1995
+											</p>
+										</div>
+										<div class="form-policy__final-info-row">
+											<p class="form-policy__final-info-item form-policy__final-info-item-num">2</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-name">Иван Келембет
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-passport">FA 785426
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-date">06.10.1995
+											</p>
+										</div>
+										<div class="form-policy__final-info-row">
+											<p class="form-policy__final-info-item form-policy__final-info-item-num">3</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-name">Иван Келембет
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-passport">FA 785426
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-date">06.10.1995
+											</p>
+										</div>
+										<div class="form-policy__final-info-row">
+											<p class="form-policy__final-info-item form-policy__final-info-item-num">4</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-name">Иван Келембет
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-passport">FA 785426
+											</p>
+											<p class="form-policy__final-info-item form-policy__final-info-item-date">06.10.1995
+											</p>
+										</div>
+									</div>
+									<div class="form-policy__final-info-table--mobile">
+										<div class="form-policy__final-info-block">
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Имя</p>
+												<p class="form-policy__final-info-descr">Иван</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Фамилия</p>
+												<p class="form-policy__final-info-descr">Келембет</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Дата рождения</p>
+												<p class="form-policy__final-info-descr">06.10.1995</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Паспорт</p>
+												<p class="form-policy__final-info-descr">FA 257595</p>
+											</div>
+										</div>
+										<div class="form-policy__final-info-block">
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Имя</p>
+												<p class="form-policy__final-info-descr">Иван</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Фамилия</p>
+												<p class="form-policy__final-info-descr">Келембет</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Дата рождения</p>
+												<p class="form-policy__final-info-descr">06.10.1995</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Паспорт</p>
+												<p class="form-policy__final-info-descr">FA 257595</p>
+											</div>
+										</div>
+										<div class="form-policy__final-info-block">
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Имя</p>
+												<p class="form-policy__final-info-descr">Иван</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Фамилия</p>
+												<p class="form-policy__final-info-descr">Келембет</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Дата рождения</p>
+												<p class="form-policy__final-info-descr">06.10.1995</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Паспорт</p>
+												<p class="form-policy__final-info-descr">FA 257595</p>
+											</div>
+										</div>
+										<div class="form-policy__final-info-block">
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Имя</p>
+												<p class="form-policy__final-info-descr">Иван</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Фамилия</p>
+												<p class="form-policy__final-info-descr">Келембет</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Дата рождения</p>
+												<p class="form-policy__final-info-descr">06.10.1995</p>
+											</div>
+											<div class="form-policy__final-info-col-row">
+												<p class="form-policy__final-info-term">Паспорт</p>
+												<p class="form-policy__final-info-descr">FA 257595</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="form-policy__footer">
+									<div class="form-policy__status">
+										<p class="form-policy__status-item">
+											Длительность поездки: <span class="form-policy__status-bold">14 дней</span>
+										</p>
+										<p class="form-policy__status-item">
+											Итоговая цена: <span class="form-policy__status-bold">140
+												USD</span>
+										</p>
+									</div>
+									<button type="button"
+										class="form-policy__btn-prev form-policy__btn-prev-to-step-three">Назад</button>
+									<button type="button"
+										class="form-policy__btn-next form-policy__btn-to-step-five">Далее</button>
 								</div>
 							</div>
 							<div class="form-policy__secure">
@@ -1952,7 +2186,8 @@
 	<script src="js/moment.min.js"></script>
 	<script src="js/simplebar.js"></script>
 	<script src="js/daterangepicker.js"></script>
-	<script src="js/main.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script src="js/main.min.js"></script> -->
 
 
 
